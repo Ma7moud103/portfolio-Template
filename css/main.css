@@ -1,0 +1,385 @@
+nav .nav-content ul {
+    margin-left: 45%;
+}
+
+.home {
+    background-image: url(../imgs/intro-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.home .layout {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.home .layout .container .caption h1 {
+    font-size: 60px;
+}
+
+.home .layout .container .caption p {
+    position: relative;
+    font-size: 40px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+}
+
+.home .layout .container .caption p::before {
+    content: "|";
+    position: absolute;
+    animation-name: paragraph;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    top: 0;
+    left: 0;
+}
+
+@media all and (max-width:570px) {
+    nav {
+        background-color: white;
+    }
+
+}
+
+@media all and (min-width:571px) and (max-width:767px) {
+    nav {
+        background-color: white;
+    }
+
+}
+
+@media all and (min-width:768px) and (max-width:992px) {
+    nav {
+        background-color: white;
+    }
+
+}
+
+@keyframes paragraph {
+    1% {
+        content: "F";
+    }
+
+    3% {
+        content: "Fr";
+    }
+
+    6% {
+        content: "Fro";
+    }
+
+
+    9% {
+        content: "Fron";
+    }
+
+
+    12% {
+        content: "Front";
+    }
+
+    15% {
+        content: "Front";
+    }
+
+    18% {
+        content: "FrontE";
+    }
+
+    21% {
+        content: "FrontEn";
+    }
+
+    24% {
+        content: "FrontEnd";
+    }
+
+    27% {
+        content: "FrontEnd";
+    }
+
+    30% {
+        content: "FrontEnd ";
+    }
+
+    32% {
+        content: "FrontEnd D";
+    }
+
+    34% {
+        content: "FrontEnd De";
+    }
+
+    36% {
+        content: "FrontEnd Dev";
+    }
+
+    38% {
+        content: "FrontEnd Deve";
+    }
+
+    40% {
+        content: "FrontEnd Devel";
+    }
+
+    42% {
+        content: "FrontEnd Develo";
+    }
+
+    44% {
+        content: "FrontEnd Develop";
+    }
+
+    46% {
+        content: "FrontEnd Develope";
+    }
+
+    48% {
+        content: "FrontEnd Developer";
+    }
+
+    50% {
+        content: "FrontEnd Developer ";
+    }
+
+    52% {
+        content: "FrontEnd Developer |";
+    }
+
+
+
+
+    54% {
+        content: "FrontEnd Developer";
+    }
+
+    59% {
+        content: "FrontEnd Develope";
+    }
+
+    60% {
+        content: "FrontEnd Develop";
+    }
+
+
+    62% {
+        content: "FrontEnd Develo";
+    }
+
+
+    66% {
+        content: "FrontEnd Devel";
+    }
+
+    69% {
+        content: "FrontEnd Deve";
+    }
+
+    70% {
+        content: "FrontEnd Dev";
+    }
+
+    72% {
+        content: "FrontEnd De";
+    }
+
+    74% {
+        content: "FrontEnd D";
+    }
+
+    77% {
+        content: "FrontEnd";
+    }
+
+    80% {
+        content: "FrontEn";
+    }
+
+    83% {
+        content: "FrontE";
+    }
+
+    86% {
+        content: "Front";
+    }
+
+    88% {
+        content: "Fron";
+    }
+
+    90% {
+        content: "Fro";
+    }
+
+    92% {
+        content: "Fr";
+    }
+
+    94% {
+        content: "F";
+    }
+
+    97% {
+        content: "";
+    }
+
+    100% {
+        content: "|";
+    }
+
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #4e4e4e;
+}
+
+:root {
+    --padding-top: 4rem;
+    --main-color: #007bff;
+}
+
+@media all and (max-width:576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+.headering p::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    background-color: var(--main-color);
+    width: 50px;
+    height: 5px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.about .container .row .progress div {
+    left: -12px;
+}
+
+.about {
+    padding-top: var(--padding-top)
+}
+
+.about .container .row .para h2::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background-color: var(--main-color);
+    left: 0;
+    bottom: 10px;
+}
+
+/* services */
+.services {
+    padding-top: var(--padding-top);
+}
+
+.services .container .row .service .service-icon .span-icon {
+    border: 9px solid var(--main-color);
+    font-size: 60px;
+    background-color: white;
+    transition: all 500ms ease;
+}
+
+.services .container .row .service .service-icon .span-icon:hover {
+    border: 9px solid rgba(22, 26, 153, 0.163);
+    background-color: var(--main-color);
+}
+
+.services .container .row .service .service-icon .span-icon:hover i {
+    color: white;
+}
+
+.services .container .row .service .service-icon .span-icon i {
+    font-size: 60px;
+    transition: all 500ms ease;
+}
+
+.services .container .row .service {
+    border-radius: 20px;
+}
+
+.services .container .row .main .service {
+    margin-bottom: 3rem;
+    padding: 2.5rem 1.3rem;
+}
+
+.counter {
+    padding-top: var(--main-color);
+    background-image: url('../imgs/counters-bg.jpg');
+    background-size: cover;
+    background-position: right right;
+    z-index: -1;
+    position: relative;
+}
+
+.counter .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-color);
+    padding: 0;
+    top: 0;
+    left: 0;
+    opacity: .7;
+    z-index: 0;
+
+}
+
+.counter .container {
+    position: relative;
+    z-index: 1;
+    padding: 7rem 2rem;
+}
+
+.counter .container .row .box .icon span {
+    border: 6px solid #ddd;
+    font-size: 50px;
+}
+
+.counter .container .row .box .icon span i {
+    font-size: 50px;
+}
+
+.counter .container .row .box .content P:first-of-type {
+    font-size: 28px;
+}
+
+/* services */
+
+/* portfolio */
+.portfolio .container .row .item .box .image {
+    overflow: hidden;
+}
+
+.portfolio .container .row .item .box .image:hover img {
+    transform: scale(1.3);
+}
+
+.portfolio .container .row .item .box .image img {
+    transition: all .9s;
+}
